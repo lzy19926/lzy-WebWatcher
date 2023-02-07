@@ -6,7 +6,7 @@ module.exports = {
     rootPath: __dirname, // 项目根路径
     entry: path.join(__dirname, './src/out/index.js'), //配置打包入口
     output: path.join(__dirname, '/dist'), // 出口
-    module: "UMD", // 自定义打包模块化规范
+    module: "UMD", // 自定义打包模块化规范(默认为CMD)
     umdName: "LzyWebWatcher", // UMD挂载到window上时会使用此名
 
     devServer: {
